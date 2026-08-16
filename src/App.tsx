@@ -5,9 +5,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Landing from './Landing'
 import Skills from './Skills'
 import About from './About'
-import work from './work'
-import career from './career'
-import contact from './contact'
+import Work from './work'
+import Career from './career'
+import Contact from './contact'
 import Navbar from './Navbar'
 gsap.registerPlugin(ScrollTrigger)
 
@@ -46,9 +46,9 @@ function App() {
       <Landing />
       <About />
       <Skills/>
-      <work />
-      <career />
-      <contact />
+      <Work />
+      <Career />
+      <Contact />
     </div>
   )
 }
