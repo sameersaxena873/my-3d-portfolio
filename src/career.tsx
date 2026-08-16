@@ -1,4 +1,4 @@
-import './Career.css'
+import './career.css'
 
 const timeline = [
   {
