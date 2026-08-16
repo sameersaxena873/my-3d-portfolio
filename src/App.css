@@ -1,0 +1,62 @@
+.circuit-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.circuit-bg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.circuit-lines path {
+  fill: none;
+  stroke: #10b981;
+  stroke-width: 2;
+  stroke-dasharray: 8;
+  animation: dash 2s linear infinite;
+  opacity: 0.6;
+}
+
+.circuit-nodes circle {
+  fill: #10b981;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.center-glow {
+  fill: #10b981;
+  opacity: 0.15;
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+    r: 4;
+  }
+  50% {
+    opacity: 1;
+    r: 6;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    opacity: 0.1;
+    r: 35;
+  }
+  50% {
+    opacity: 0.25;
+    r: 45;
+  }
+}

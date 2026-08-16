@@ -1,0 +1,62 @@
+#career {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-color: #111111;
+  color: white;
+  text-align: center;
+}
+
+#career h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 2px solid #10b981;
+  text-align: left;
+  box-shadow: -2px 0 15px rgba(16, 185, 129, 0.2);
+}
+
+.timeline-item {
+  padding: 0 0 35px 30px;
+  position: relative;
+  opacity: 1;
+  transform: translateX(-20px);
+}
+.timeline-item:hover {
+  transform: translateX(5px);
+}
+
+.timeline-item:hover h3 {
+  color: #00ffaa;
+  text-shadow: 0 0 15px rgba(0, 255, 170, 0.5);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #10b981;
+  border-radius: 50%;
+}
+
+.year {
+  color: #10b981;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.timeline-item h3 {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.timeline-item p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
